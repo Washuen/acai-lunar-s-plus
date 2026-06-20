@@ -265,33 +265,6 @@ Status: S+ / obra-prima de portfólio
 
 ---
 
-
-
----
-
-## 🏁 GitHub final
-
-Este repositório foi preparado para apresentação pública com:
-
-```txt
-README visual
-Deploy público
-Credenciais demo
-Documentação técnica
-Validação de produção
-Guia de screenshots
-Apresentação para portfólio
-```
-
-Documentos úteis:
-
-```txt
-docs/GITHUB_FINAL_SETUP.md
-docs/PORTFOLIO_PRESENTATION.md
-docs/REPOSITORY_QUALITY_REPORT_BLOCO_3_6.md
-CHECKLIST_GITHUB_FINAL_BLOCO_3_6.md
-```
-
 ## 👨‍💻 Autor
 
 Desenvolvido por **Luiz Silva** como projeto fullstack premium para portfólio.
