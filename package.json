@@ -16,7 +16,9 @@
     "test:manual": "node scripts/print-manual-checklist.js",
     "github:preflight": "node scripts/github-preflight.js",
     "deploy:preflight": "node scripts/render-preflight.js",
-    "deploy:postcheck": "node scripts/render-postdeploy-check.js"
+    "deploy:postcheck": "node scripts/render-postdeploy-check.js",
+    "production:check": "node scripts/production-check.js",
+    "production:fullcheck": "node scripts/production-fullcheck.js"
   },
   "keywords": [
     "nodejs",

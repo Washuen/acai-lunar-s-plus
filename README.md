@@ -515,3 +515,27 @@ Galeria transformada em Momentos Lunares
 Seção técnica de UX transformada em diferenciais da marca
 Admin preview transformado em central interna de gestão
 ```
+
+
+---
+
+## Bloco 3.4 — Validação de Produção + Ajustes Pós-Deploy
+
+Esta versão adiciona a validação oficial de produção para o Açaí Lunar S+ Super publicado no Render com banco Neon.
+
+Novos comandos:
+
+```bash
+npm run production:check -- https://acai-lunar-s-plus.onrender.com
+npm run production:fullcheck -- https://acai-lunar-s-plus.onrender.com
+```
+
+Arquivos adicionados:
+
+```txt
+CHECKLIST_PRODUCAO_BLOCO_3_4.md
+docs/RELATORIO_POS_DEPLOY_BLOCO_3_4.md
+scripts/production-check.js
+scripts/production-fullcheck.js
+README_BLOCO_3_4_VALIDACAO_PRODUCAO.md
+```
