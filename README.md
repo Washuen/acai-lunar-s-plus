@@ -269,6 +269,33 @@ Status: S+ / obra-prima de portfólio
 
 ---
 
+
+
+---
+
+## 🏷️ Release oficial
+
+Versão estável:
+
+```txt
+v1.0.0 — Official Stable Release
+```
+
+Arquivos de release:
+
+```txt
+RELEASE_NOTES_v1.0.0.md
+CHECKLIST_RELEASE_v1.0.0.md
+docs/RELEASE_GUIDE.md
+```
+
+Comandos para criar a tag:
+
+```bash
+git tag -a v1.0.0 -m "Açaí Lunar S+ Super official stable release"
+git push origin v1.0.0
+```
+
 ## 🏁 GitHub final
 
 Este repositório foi preparado para apresentação pública com:
