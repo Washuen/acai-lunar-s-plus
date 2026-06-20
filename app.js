@@ -120,7 +120,7 @@ async function loadProductsFromApi() {
       }));
     }
   } catch (error) {
-    console.warn('API indisponível. Usando dados locais do preview.', error.message);
+    console.warn('API indisponível. Usando dados locais temporários.', error.message);
   }
 }
 
@@ -130,7 +130,7 @@ function getCheckoutPayload() {
   const customerPhone = $('#checkoutPhone')?.value.trim() || user?.phone || '(81) 99999-0000';
   const customerEmail = $('#checkoutEmail')?.value.trim() || user?.email || 'cliente@acailunar.dev';
   const address = $('#checkoutAddress')?.value.trim();
-  const notes = $('#checkoutNotes')?.value.trim() || (user ? `Pedido criado por ${user.name}.` : 'Pedido criado pelo frontend Açaí Lunar S+.');
+  const notes = $('#checkoutNotes')?.value.trim() || (user ? `Pedido criado por ${user.name}.` : 'Pedido criado pelo Açaí Lunar S+.');
 
   if (!address) throw new Error('Informe o endereço de entrega antes de finalizar.');
 
@@ -192,30 +192,30 @@ async function loadMyOrdersFromApi() {
 }
 
 const visualLibrary = [
-  ['01_noite_tropical_com_bowls_de_acai','Home / hero alternativo'],
-  ['02_acai_de_luxo_a_luz_da_lua','Produto destaque'],
-  ['03_mesa_elegante_com_embalagem_de_delivery','Delivery / checkout'],
+  ['01_noite_tropical_com_bowls_de_acai','Noite tropical'],
+  ['02_acai_de_luxo_a_luz_da_lua','Bowl assinatura'],
+  ['03_mesa_elegante_com_embalagem_de_delivery','Pedido em casa'],
   ['04_taca_de_acai_sob_a_lua_cheia','Copo assinatura'],
-  ['05_tigela_de_smoothie_fitness_com_detalhes','Fitness / proteico'],
+  ['05_tigela_de_smoothie_fitness_com_detalhes','Leve e tropical'],
   ['06_noite_de_sabores_e_acai_premium','Combo premium'],
   ['07_bowl_de_acai_sob_luz_suave','Bowl premium'],
   ['08_sob_a_lua_sobremesa_de_luxo','Edição especial'],
   ['09_sob_o_luar_sobremesa_tropical_sofisticada','Sobremesa tropical'],
-  ['10_cafe_da_manha_gourmet_em_tons_escuros','Monte seu açaí'],
-  ['11_cenario_tropical_noturno_com_acai','Hero principal'],
+  ['10_cafe_da_manha_gourmet_em_tons_escuros','Toppings favoritos'],
+  ['11_cenario_tropical_noturno_com_acai','Clima lunar'],
   ['12_acai_com_frutas_e_granola_ao_luar','Produto clássico'],
-  ['13_noite_de_sabor_e_texturas','Ingredientes / toppings'],
+  ['13_noite_de_sabor_e_texturas','Ingredientes especiais'],
   ['14_taca_de_acai_com_frutas_e_mel','Produto mel'],
   ['15_delicia_roxa_ao_luar','Copo / bebida'],
   ['16_sob_a_lua_sobremesas_tropicais_refinadas','Vitrine de cardápio'],
   ['17_acai_com_frutas_e_granola','Tradicional'],
-  ['18_jantar_romantico_a_luz_de_velas','Branding / institucional'],
+  ['18_jantar_romantico_a_luz_de_velas','Noite especial'],
   ['19_acai_e_frutas_sob_a_luz_da_lua','Variedade'],
   ['20_sob_a_luz_da_lua_e_flores','Parfait elegante'],
   ['21_bowl_de_acai_com_frutas_tropicais','Frutas tropicais'],
   ['22_noite_luxuosa_com_delicias_de_acai','Combo família'],
   ['23_tigela_de_acai_sob_a_lua','Assinatura lunar'],
-  ['24_sob_o_brilho_da_lua_e_frutas','Chocolate / brownie'],
+  ['24_sob_o_brilho_da_lua_e_frutas','Chocolate e frutas'],
   ['25_parfait_elegante_com_flores_e_luzes','Sobremesa premium'],
   ['26_tigela_de_acai_ao_estilo_gourmet','Gourmet'],
   ['27_parfait_noturno_com_toque_dourado','Parfait dourado'],

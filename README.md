@@ -495,3 +495,23 @@ Build Command: npm install && npx prisma generate
 Start Command: npm run start
 Health Check Path: /api/health
 ```
+
+
+---
+
+## Bloco 3.3.1 — Polimento Comercial Pós-Deploy
+
+Esta versão remove linguagem técnica da página pública e aproxima o site de uma experiência real de marca premium de açaí.
+
+Principais ajustes:
+
+```txt
+Hero mais comercial
+Cardápio com linguagem de venda real
+Combos mais naturais
+Delivery com foco em experiência do cliente
+Área do cliente com texto menos técnico
+Galeria transformada em Momentos Lunares
+Seção técnica de UX transformada em diferenciais da marca
+Admin preview transformado em central interna de gestão
+```
