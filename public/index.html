@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Açaí Lunar S+ Super — Bloco 2.8 + Favicon & Confirmações Cósmicas</title>
+  <meta name="description" content="Frontend premium do Açaí Lunar S+ Super com polimento fino de UX, responsividade, conversão, carrinho, checkout, admin preview, favicon autoral e confirmações cósmicas padronizadas." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+
+  <script>
+    (function () {
+      try {
+        var hasSession = Boolean(localStorage.getItem('acai_lunar_auth_token_v21'));
+        document.documentElement.classList.add(hasSession ? 'session-cached' : 'session-guest');
+      } catch (_) {
+        document.documentElement.classList.add('session-guest');
+      }
+    })();
+  </script>
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/favicon-192.png" />
+  <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png" />
+  <meta name="theme-color" content="#12081d" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-glow page-glow-one"></div>
+  <div class="page-glow page-glow-two"></div>
+
+  <header class="topbar">
+    <a href="#home" class="brand" aria-label="Açaí Lunar">
+      <span class="brand-orb">☾</span>
+      <span>
+        <strong>Açaí Lunar</strong>
+        <small>S+ Super • Fullstack 2.8</small>
+      </span>
+    </a>
+
+    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menu">☰</button>
+
+    <nav class="nav" id="mainNav" aria-label="Navegação principal">
+      <a href="#menu">Cardápio</a>
+      <a href="#builder">Monte o seu</a>
+      <a href="#combos">Combos</a>
+      <a href="#delivery">Delivery</a>
+      <a href="#client">Cliente</a>
+      <a href="#admin">Admin</a>
+      <a href="#quality">Qualidade</a>
+    </nav>
+
+    <div class="top-actions">
+      <button class="ghost-btn" data-open-auth data-logged-out-label="Entrar">Entrar</button>
+      <button class="cart-btn" data-open-cart>Carrinho <span id="cartCount">0</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <picture class="hero-bg">
+        <source srcset="assets/images_webp/11_cenario_tropical_noturno_com_acai.webp" type="image/webp">
+        <img src="assets/images/11_cenario_tropical_noturno_com_acai.png" alt="Açaí Lunar em cenário tropical noturno com bowls premium">
+      </picture>
+      <div class="hero-overlay"></div>
+      <div class="hero-inner section-shell">
+        <div class="hero-content">
+          <span class="eyebrow">Delivery premium • noite tropical • UX polido • responsivo • pronto para backend</span>
+          <h1>Açaí premium sob a luz da lua.</h1>
+          <p>
+            Uma experiência de delivery visualmente memorável: fotos premium, fluxo de compra refinado,
+            carrinho com miniaturas, personalização guiada, checkout visual e admin preview preparado para backend real.
+          </p>
+          <div class="hero-actions">
+            <a href="#menu" class="primary-btn">Ver cardápio</a>
+            <a href="#builder" class="secondary-btn">Montar meu açaí</a>
+          </div>
+          <div class="hero-stats">
+            <article><strong>28</strong><span>imagens premium</span></article>
+            <article><strong>2.8</strong><span>polimento fullstack</span></article>
+            <article><strong>JWT</strong><span>sessão real</span></article>
+          </div>
+          <div class="session-badge" id="sessionBadge">
+            <strong>Visitante</strong><span>Entre para sincronizar pedidos e admin com a API.</span>
+          </div>
+        </div>
+
+        <div class="hero-product-card">
+          <img src="assets/images_webp/02_acai_de_luxo_a_luz_da_lua.webp" alt="Bowl premium Açaí Lunar" loading="lazy" />
+          <div>
+            <span>Mais pedido</span>
+            <strong>Eclipse Tropical</strong>
+            <small>Açaí, morango, banana, kiwi, granola e mel lunar.</small>
+          </div>
+          <button data-add-featured>Adicionar</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-shell visual-strip" aria-label="Destaques visuais">
+      <article>
+        <img src="assets/images_webp/03_mesa_elegante_com_embalagem_de_delivery.webp" alt="Embalagem premium de delivery Açaí Lunar" loading="lazy">
+        <div><span>Delivery premium</span><strong>pedido pronto para impressionar</strong></div>
+      </article>
+      <article>
+        <img src="assets/images_webp/10_cafe_da_manha_gourmet_em_tons_escuros.webp" alt="Toppings e ingredientes para montar açaí" loading="lazy">
+        <div><span>Personalização</span><strong>toppings, frutas e caldas</strong></div>
+      </article>
+      <article>
+        <img src="assets/images_webp/16_sob_a_lua_sobremesas_tropicais_refinadas.webp" alt="Vitrine premium de sobremesas de açaí" loading="lazy">
+        <div><span>Vitrine lunar</span><strong>catálogo com fotos reais</strong></div>
+      </article>
+    </section>
+
+    <section class="section-shell conversion-strip" aria-label="Diferenciais comerciais">
+      <article><span>Entrega estimada</span><strong>35–50 min</strong><small>status visual no pedido</small></article>
+      <article><span>Cupom ativo</span><strong>LUNAR15</strong><small>15% no preview</small></article>
+      <article><span>Ticket médio</span><strong>Combos premium</strong><small>dupla, família e especiais</small></article>
+      <article><span>UX preparada</span><strong>Backend ready</strong><small>dados organizados para API</small></article>
+    </section>
+
+    <section id="menu" class="section-shell menu-section">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">Cardápio lunar</span>
+          <h2>Produtos com cara de marca grande.</h2>
+          <p>Cards com fotos premium, categorias, busca e interação pronta para evoluir para backend real.</p>
+        </div>
+        <div class="search-box">
+          <input id="searchInput" type="search" placeholder="Buscar bowl, copo, combo, fruta..." />
+        </div>
+      </div>
+      <div class="category-tabs" id="categoryTabs"></div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section id="builder" class="section-shell builder-section">
+      <div class="builder-visual">
+        <img src="assets/images_webp/13_noite_de_sabor_e_texturas.webp" alt="Ingredientes e toppings premium do Açaí Lunar" loading="lazy" />
+        <div class="builder-badge">Monte o seu</div>
+      </div>
+      <div class="builder-panel">
+        <span class="eyebrow">Experiência assinatura</span>
+        <h2>Monte o bowl perfeito para sua noite.</h2>
+        <p>Escolha tamanho, base e complementos em um fluxo guiado. O preço muda ao vivo e o pedido entra direto no carrinho.</p>
+        <div class="builder-step">
+          <label>Tamanho</label>
+          <div class="option-row" data-builder="size"></div>
+        </div>
+        <div class="builder-step">
+          <label>Base</label>
+          <div class="option-row" data-builder="base"></div>
+        </div>
+        <div class="builder-step">
+          <label>Complementos</label>
+          <div class="option-row multi" data-builder="addons"></div>
+        </div>
+        <div class="builder-selected" id="builderSelected"></div>
+        <div class="builder-summary">
+          <div><span>Total personalizado</span><strong id="builderTotal">R$ 0,00</strong></div>
+          <button class="primary-btn" id="addCustomBowl">Adicionar bowl</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="combos" class="section-shell combo-section">
+      <div class="section-heading centered">
+        <span class="eyebrow">Combos e campanhas</span>
+        <h2>Seções prontas para vender mais.</h2>
+        <p>Imagens selecionadas para banners comerciais, ofertas em dupla, família e edições especiais.</p>
+      </div>
+      <div class="combo-grid">
+        <article class="combo-card large">
+          <img src="assets/images_webp/06_noite_de_sabores_e_acai_premium.webp" alt="Combo premium Açaí Lunar com delivery">
+          <div><span>Combo delivery</span><h3>Noite Lunar para dois</h3><p>Perfeito para aumentar ticket médio com uma apresentação memorável.</p></div>
+        </article>
+        <article class="combo-card">
+          <img src="assets/images_webp/22_noite_luxuosa_com_delicias_de_acai.webp" alt="Combo família Açaí Lunar">
+          <div><span>Família</span><h3>Trio Lunar</h3></div>
+        </article>
+        <article class="combo-card">
+          <img src="assets/images_webp/08_sob_a_lua_sobremesa_de_luxo.webp" alt="Edição especial Açaí Lunar">
+          <div><span>Edição especial</span><h3>Lua de Chocolate</h3></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="delivery" class="section-shell delivery-section">
+      <div class="delivery-copy">
+        <span class="eyebrow">Pedido em casa</span>
+        <h2>Delivery com aparência de marca pronta para vender.</h2>
+        <p>
+          A imagem de embalagem premium fortalece confiança, checkout e percepção comercial. Essa seção foi pensada
+          para diferenciar o Açaí Lunar de um protótipo comum.
+        </p>
+        <div class="delivery-points">
+          <span>Embalagem premium</span>
+          <span>Tempo estimado</span>
+          <span>Status visual</span>
+          <span>Checkout fluido</span>
+        </div>
+      </div>
+      <img class="delivery-img" src="assets/images_webp/03_mesa_elegante_com_embalagem_de_delivery.webp" alt="Delivery premium Açaí Lunar com embalagens e sacola" loading="lazy">
+    </section>
+
+    <section id="tracking" class="section-shell tracking-section">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">Acompanhamento real</span>
+          <h2>Status do pedido sincronizado com a API.</h2>
+        </div>
+        <button class="secondary-btn" id="simulateOrder">Avançar status visual</button>
+      </div>
+      <div class="timeline" id="timeline"></div>
+      <div class="my-orders-panel" id="myOrdersPanel"></div>
+    </section>
+
+
+    <section id="client" class="section-shell client-section">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">Área do Cliente Real</span>
+          <h2>Seu espaço lunar com pedidos, perfil e endereço.</h2>
+          <p>Dados sincronizados com a API: histórico de pedidos, status, resumo de consumo, perfil e endereço salvo para checkout.</p>
+        </div>
+        <button class="secondary-btn" id="refreshClientArea">Atualizar área do cliente</button>
+      </div>
+
+      <div class="client-layout">
+        <aside class="client-sidebar" id="clientSidebar"></aside>
+        <div class="client-content" id="clientContent"></div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section-shell gallery-section">
+      <div class="section-heading centered">
+        <span class="eyebrow">Biblioteca visual</span>
+        <h2>28 imagens curadas para o UX.</h2>
+        <p>Todas as imagens principais aparecem no projeto para facilitar escolha e futura integração em backend/admin.</p>
+      </div>
+      <div class="gallery-grid" id="galleryGrid"></div>
+    </section>
+
+    <section id="quality" class="section-shell quality-section">
+      <div class="section-heading centered">
+        <span class="eyebrow">Polimento fino</span>
+        <h2>Critérios de UX antes do backend.</h2>
+        <p>Bloco 1.2 deixa o frontend mais maduro, responsivo e organizado para virar fullstack sem bagunça.</p>
+      </div>
+      <div class="quality-grid">
+        <article><strong>Responsivo</strong><span>Hero, cards, carrinho, builder, galeria e admin ajustados para mobile.</span></article>
+        <article><strong>Conversão</strong><span>Preço, cupom, entrega, total e CTA mais claros durante a compra.</span></article>
+        <article><strong>Performance visual</strong><span>Imagens WebP, lazy loading e uso mais controlado das 28 imagens.</span></article>
+        <article><strong>Backend ready</strong><span>Produtos, pedidos, carrinho e admin organizados para futura API.</span></article>
+      </div>
+    </section>
+
+    <section id="admin" class="admin-section section-shell">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">Admin preview</span>
+          <h2>Central de operação Açaí Lunar.</h2>
+          <p>Preview limpo com autenticação real: owner/admin libera painel, cliente comum fica protegido.</p>
+        </div>
+        <button class="ghost-btn" data-open-auth data-admin-login="true" data-logged-out-label="Login admin">Login admin</button>
+      </div>
+      <div class="admin-layout">
+        <aside class="admin-menu" id="adminMenu"></aside>
+        <div class="admin-content" id="adminContent"></div>
+      </div>
+    </section>
+  </main>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+    <div class="drawer-header">
+      <div><span class="eyebrow">Seu pedido</span><h3>Carrinho Lunar</h3></div>
+      <button class="icon-btn" data-close-cart>×</button>
+    </div>
+    <div class="checkout-progress">
+      <span class="active">Carrinho</span><span>Dados</span><span>Confirmação</span>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="coupon-line">
+      <input id="couponInput" placeholder="Cupom" value="LUNAR15" />
+      <button class="secondary-btn" id="applyCoupon">Aplicar</button>
+    </div>
+    <form class="checkout-form" id="checkoutForm">
+      <label>Nome para entrega
+        <input id="checkoutName" placeholder="Seu nome" autocomplete="name" />
+      </label>
+      <label>Telefone
+        <input id="checkoutPhone" placeholder="(81) 99999-0000" autocomplete="tel" />
+      </label>
+      <label>E-mail
+        <input id="checkoutEmail" placeholder="voce@email.com" autocomplete="email" />
+      </label>
+      <label>Endereço
+        <input id="checkoutAddress" placeholder="Rua, número, bairro, cidade" autocomplete="street-address" />
+      </label>
+      <label>Observações
+        <textarea id="checkoutNotes" placeholder="Ex.: sem banana, entregar na portaria, troco para R$ 100..."></textarea>
+      </label>
+      <small id="checkoutHint">Entre na sua conta para salvar e acompanhar pedidos reais no banco.</small>
+    </form>
+    <div class="cart-total" id="cartTotal"></div>
+    <button class="primary-btn full" id="checkoutBtn">Finalizar pedido real</button>
+    <button class="ghost-btn full subtle" id="clearCartBtn">Limpar carrinho</button>
+  </aside>
+  <div class="overlay" id="overlay"></div>
+
+  <dialog class="auth-modal" id="authModal">
+    <button class="icon-btn modal-close" data-close-auth>×</button>
+    <span class="eyebrow">Acesso lunar real</span>
+    <h3>Entrar na sua conta</h3>
+    <p>Sessão, checkout, área do cliente e painel admin conectados à API com UX polida e confirmações cósmicas padronizadas.</p>
+    <div class="auth-demo-row">
+      <button class="secondary-btn" data-demo-login="customer">Usar cliente</button>
+      <button class="secondary-btn" data-demo-login="owner">Usar owner</button>
+    </div>
+    <input id="authName" placeholder="Nome para cadastro" value="Cliente Lunar" />
+    <input id="authEmail" placeholder="E-mail" value="cliente@acailunar.dev" />
+    <input id="authPassword" placeholder="Senha" type="password" value="123456" />
+    <small class="auth-status" id="authStatus">Nenhuma sessão ativa.</small>
+    <div class="auth-actions-row">
+      <button class="primary-btn full" id="loginBtn">Entrar com API</button>
+      <button class="ghost-btn full" id="registerBtn">Criar conta</button>
+    </div>
+  </dialog>
+
+  <dialog class="image-modal" id="imageModal">
+    <button class="icon-btn modal-close" data-close-image>×</button>
+    <img id="imageModalImg" alt="Imagem ampliada do Açaí Lunar" />
+    <div><strong id="imageModalTitle"></strong><span id="imageModalUse"></span></div>
+  </dialog>
+
+  <dialog class="confirm-modal" id="confirmModal">
+    <div class="confirm-shell" data-confirm-tone="warning">
+      <div class="confirm-orb">☾</div>
+      <span class="eyebrow">Confirmação lunar</span>
+      <h3 id="confirmTitle">Confirmar ação</h3>
+      <p id="confirmMessage">Tem certeza que deseja continuar?</p>
+      <div class="confirm-actions">
+        <button class="ghost-btn" type="button" data-confirm-cancel>Cancelar</button>
+        <button class="primary-btn" type="button" data-confirm-accept>Confirmar</button>
+      </div>
+    </div>
+  </dialog>
+
+  <div class="toast" id="toast"></div>
+  <script src="app.js"></script>
+</body>
+</html>
