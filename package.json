@@ -1,6 +1,6 @@
 {
   "name": "acai-lunar-s-plus",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Premium fullstack açaí delivery platform with customer area, admin dashboard, real checkout, PostgreSQL, Prisma, JWT authentication and Render deploy.",
   "main": "src/server.js",
   "scripts": {

@@ -50,7 +50,8 @@ router.post('/register', asyncHandler(async (req, res) => {
       phone,
       address,
       password: await bcrypt.hash(password, 10),
-      role: 'CUSTOMER'
+      role: 'CUSTOMER',
+      active: true
     }
   });
 

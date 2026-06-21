@@ -326,3 +326,14 @@ Desenvolvido por **Luiz Silva** como projeto fullstack premium para portfólio.
 ```txt
 Node.js • Express • PostgreSQL • Prisma • JWT • Render • Neon
 ```
+
+
+### Patch v1.0.1 — Cadastro de Cliente
+
+Correção focada no cadastro de novas contas de cliente: validação visual no modal, proteção contra uso acidental de e-mails demo, criação de usuário `CUSTOMER`, sessão automática após cadastro e checklist próprio de validação.
+
+Arquivos relacionados:
+
+- `RELEASE_NOTES_v1.0.1.md`
+- `CHECKLIST_PATCH_v1.0.1_CADASTRO.md`
+

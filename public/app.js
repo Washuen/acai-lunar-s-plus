@@ -435,7 +435,7 @@ function renderAuthState() {
 
 async function submitLogin() {
   const loginButton = $('#loginBtn');
-  const email = $('#authEmail').value.trim();
+  const email = $('#authEmail').value.trim().toLowerCase();
   const password = $('#authPassword').value;
   if (!email || !password) return toast('Informe e-mail e senha.');
 
@@ -460,10 +460,18 @@ async function submitLogin() {
 
 async function submitRegister() {
   const registerButton = $('#registerBtn');
-  const name = $('#authName').value.trim() || 'Cliente Lunar';
-  const email = $('#authEmail').value.trim();
+  const name = $('#authName').value.trim();
+  const email = $('#authEmail').value.trim().toLowerCase();
   const password = $('#authPassword').value;
+  const demoEmails = ['cliente@acailunar.dev', 'owner@acailunar.dev'];
+
+  if (name.length < 2) return toast('Informe seu nome para criar a conta.');
   if (!email || !password) return toast('Informe e-mail e senha para criar conta.');
+  if (!email.includes('@') || !email.includes('.')) return toast('Informe um e-mail válido para cadastro.');
+  if (password.length < 6) return toast('A senha precisa ter pelo menos 6 caracteres.');
+  if (demoEmails.includes(email)) {
+    return toast('Esse e-mail é demo e já existe. Use outro e-mail para testar o cadastro.');
+  }
 
   setButtonBusy(registerButton, true, 'Criando...');
   try {
@@ -476,7 +484,7 @@ async function submitRegister() {
     await loadMyOrdersFromApi();
     if (isAdminUser()) await loadAdminDataFromApi(true);
     renderAdmin();
-    toast(`Conta criada, ${data.user.name}.`);
+    toast(`Conta criada, ${data.user.name}. Você já está logado.`);
   } catch (error) {
     toast(error.message);
   } finally {

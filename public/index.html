@@ -309,15 +309,15 @@
   <dialog class="auth-modal" id="authModal">
     <button class="icon-btn modal-close" data-close-auth>×</button>
     <span class="eyebrow">Acesso lunar</span>
-    <h3>Entre na sua conta lunar</h3>
-    <p>Sessão, checkout, área do cliente e painel admin conectados à API com UX polida e confirmações cósmicas padronizadas.</p>
+    <h3>Entre ou crie sua conta lunar</h3>
+    <p>Sessão, checkout, área do cliente e painel admin conectados à API. Para testar o cadastro, use um e-mail novo diferente dos usuários demo.</p>
     <div class="auth-demo-row">
       <button class="secondary-btn" data-demo-login="customer">Usar cliente</button>
       <button class="secondary-btn" data-demo-login="owner">Usar owner</button>
     </div>
-    <input id="authName" placeholder="Nome para cadastro" value="Cliente Lunar" />
-    <input id="authEmail" placeholder="E-mail" value="cliente@acailunar.dev" />
-    <input id="authPassword" placeholder="Senha" type="password" value="123456" />
+    <input id="authName" placeholder="Nome para cadastro" autocomplete="name" />
+    <input id="authEmail" placeholder="E-mail" autocomplete="email" />
+    <input id="authPassword" placeholder="Senha com pelo menos 6 caracteres" type="password" autocomplete="current-password" />
     <small class="auth-status" id="authStatus">Nenhuma sessão ativa.</small>
     <div class="auth-actions-row">
       <button class="primary-btn full" id="loginBtn">Entrar com API</button>
